@@ -30,6 +30,7 @@ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
  * of data structures, macros etc. from the following header files
 */
 #include <stdio.h>
+#include <stdlib.h>
 #include "libgcov-port.h"
 #include "libgcov.h"
 

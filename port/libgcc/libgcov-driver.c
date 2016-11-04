@@ -25,11 +25,12 @@ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 
 #ifdef ENABLE_LIBGCOV_PORT
 
+#include <stdlib.h>
+#include <string.h>
 #include "libgcov-port.h"
 #include "libgcov.h"
 
-/* @NO_INCLUDE_SRC static */ int
-GCOV_LINKAGE gcov_exit_open_gcda_file (struct gcov_info *gi_ptr
+GCOV_LINKAGE /* @NO_INCLUDE_SRC static */ int gcov_exit_open_gcda_file (struct gcov_info *gi_ptr
             /* @NO_AUTO_GCDA_CREATION , struct gcov_filename *gf*/);
 
 
@@ -604,7 +605,7 @@ read_fatal:;
                 "profiling:%s:Error writing\n",
                 gf->filename);
 #else
-      ;
+      { }
 #endif
 }
 
