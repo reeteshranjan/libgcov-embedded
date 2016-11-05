@@ -31,6 +31,7 @@ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "libgcov-port.h"
 #include "libgcov.h"
 
